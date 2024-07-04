@@ -70,9 +70,18 @@ We created an Inventory Management System using HTML, CSS, Flask, and MySQL. Thi
 
 ## Screenshots
 
-![Dashboard](screenshots/dashboard.png)
-![Add Product](screenshots/add_product.png)
-![Product List](screenshots/product_list.png)
+### Home Page
+![Home Page](https://github.com/shreya6s/Inventory-Management-System/assets/120666315/1f1680de-520e-43f0-bbe6-a1cb311a68fc)
+
+### Product Table
+![Product Table](https://github.com/shreya6s/Inventory-Management-System/assets/120666315/417e77e6-ffa9-4ffc-bfd9-e5fa1e470483)
+
+### Update Stock
+![Update Stock](https://github.com/shreya6s/Inventory-Management-System/assets/120666315/dea582b8-c375-4127-a524-0a6ffed01ffb)
+
+### Customer Table
+![Customer Table](https://github.com/shreya6s/Inventory-Management-System/assets/120666315/099effa2-48f8-4fb5-b096-1c2026ca749f)
+
 
 ## Contributing
 
