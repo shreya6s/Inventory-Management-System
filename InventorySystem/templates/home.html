@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVENTxoxo</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, rgb(125, 176, 236), rgb(175, 139, 196));
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        .divClass {
+            background: linear-gradient(45deg, #353030, #04010ebd);
+            height: 40px;
+            border: 4px;
+            margin-top: 0;
+            padding-top: 20px;
+            box-shadow: 0 2px 5px rgb(2, 0, 2);
+        }
+
+        .section {
+            display: flex;
+            opacity: 0;
+            /* Initially set opacity to 0 for the fade-in effect */
+            animation: fadeIn 1s ease-out forwards;
+
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .section img {
+            float: left;
+            margin-left: 100px;
+            height: 250px;
+            width: 350px;
+        }
+
+        .icon {
+            text-align: center;
+            /* Align links to the center */
+        }
+
+        /* Normal styles for anchor */
+        a {
+            color: #3498db;
+            /* Default link color */
+            text-decoration: none;
+            /* Remove underlines from links */
+            transition: color 0.3s ease;
+            /* Smooth transition for color change */
+        }
+
+        /* Hover styles for anchor */
+        a:hover {
+            color: pink;
+            /* Change link color on hover */
+            text-decoration: underline;
+            /* Underline the link on hover */
+        }
+
+
+
+        .content {
+            margin-left: 30px;
+            padding-top: 70px;
+        }
+
+        .content a {
+            display: block;
+            font-size: 15px;
+            margin-top: px;
+            background: linear-gradient(45deg, rgba(242, 235, 243, 0.59), rgb(175, 172, 240));
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            border-radius: 5px;
+            margin-left: 440px;
+        }
+
+        .icon a {
+            display: inline-block;
+            font-size: 20px;
+            text-align: right;
+            margin-left: 600px;
+            color: white;
+            font-style: inherit;
+            text-decoration: none;
+        }
+
+        .link-container {
+            text-align: right;
+        }
+
+        .link-container img {
+            float: left;
+            margin-left: 15px;
+            height: 30px;
+            width: 30px;
+        }
+
+        .link-container a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            color: white;
+            margin: 0 10px;
+            font-family: arial;
+            font-weight: 400;
+
+            /* Default link color */
+            text-decoration: none;
+            /* Remove underlines from links */
+            transition: color 0.3s ease;
+        }
+
+        .link-container a:hover {
+            color: darkgray;
+            /* Change link color on hover */
+            text-decoration: underline;
+        }
+
+        .bgrnd {
+            background-image: url('/static/pics/image2.jpg');
+            filter: brightness(0.6);
+            background-size: cover;
+        }
+
+        .hover-div:hover {
+            background-color: #f6eae9;
+            /* Background color on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="link-container divClass">
+        <img src="{{img5}}" alt="Icon Image">
+
+
+        <a href="/home">Home</a>
+
+
+        <a href="/addStock">Add stock</a>
+        <a href="/updateStock">Update stock</a>
+        <a href="/removeStock">Remove stock</a>
+
+
+        <a href="/">Log Out</a>
+    </div>
+
+    <div class="bgrnd">
+        <div class="section  ">
+
+            <div class="content">
+                <a href="{{ url_for('product')}}" class=" hover-div">PRODUCT PAGE</a>
+            </div>
+        </div>
+
+        <div class="section">
+
+            <div class="content">
+                <a href="{{ url_for('provider')}}" class=" hover-div">PROVIDER PAGE</a>
+            </div>
+        </div>
+
+        <div class="section" style="padding-bottom: 100px;">
+
+            <div class="content">
+                <a href="{{ url_for('customer')}}" class=" hover-div">CUSTOMER PAGE</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #2a2a31;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    p {
+      text-align: center;
+      background-image: url('pimg.jpg');
+      background-size: cover;
+      color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .divClass {
+            background: linear-gradient(45deg, #353030, #04010ebd);
+            height: 40px;
+            border: 4px;
+            margin-top: 0;
+            padding-top: 20px;
+            box-shadow: 0 2px 5px rgb(2, 0, 2);
+        }
+    .link-container {
+            text-align: right;
+        }
+
+        .link-container img {
+            float: left;
+            margin-left: 15px;
+            height: 30px;
+            width: 30px;
+        }
+
+        .link-container a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            color: white;
+            margin: 0 10px;
+            font-family: arial;
+            font-weight: 400;
+
+            /* Default link color */
+            text-decoration: none;
+            /* Remove underlines from links */
+            transition: color 0.3s ease;
+        }
+
+        .link-container a:hover {
+            color: darkgray;
+            /* Change link color on hover */
+            text-decoration: underline;
+        }
+  </style>
+  <body>
+    <div class="link-container divClass">
+      <img src="{{img5}}" alt="Icon Image">
+
+
+      <a href="/home">Home</a>
+
+
+      <a href="/addStock">Add stock</a>
+      <a href="/updateStock">Update stock</a>
+      <a href="/removeStock">Remove stock</a>
+
+
+      <a href="/">Log Out</a>
+  </div>
+    <title>PRODUCT PAGE</title>
+    <h2>PRODUCT TABLE</h2>
+
+    <table>
+      <tr>
+        <th>Product ID</th>
+        <th>Product Code</th>
+        <th>Product Name</th>
+        <th>Packed Weight(tonne)</th>
+        <th>Quantity</th>
+        <th>Refrigerated</th>
+      </tr>
+      {% for row in rows %}
+            <tr>
+              {% for cell in row %}
+                <td>{{ cell }}</td>
+                {% endfor %}
+                
+                <!-- Add more cells for other columns as needed -->
+            </tr>
+        {% endfor %}
+    </table>
+
+    
+  </body>
+</html>
