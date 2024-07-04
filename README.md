@@ -29,7 +29,7 @@ We created an Inventory Management System using HTML, CSS, Flask, and MySQL. Thi
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/your-username/inventory-management-system.git
+    git clone https://github.com/shreya6s/inventory-management-system.git
     cd inventory-management-system
     ```
 
